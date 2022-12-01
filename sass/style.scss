@@ -8,6 +8,7 @@
 	padding: 0;
 }
 body {
+	background-color: #f6f6f6;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -89,15 +90,16 @@ footer {
 }
 .index-banner-content {
 	display: flex;
+	align-items: center;
 	width: 100%;
 }
 .index-banner-content > * {
-	width: 36%;
-	margin: 2rem 6%;
+	width: 42%;
+	margin: 2rem 2%;
 }
 // temporary hack.
 .index-banner-content > img {
-	height: 20px;
+	height: 20rem;
 }
 .center {
 	margin: auto;
