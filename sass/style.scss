@@ -1,6 +1,7 @@
 :root {
     --content-width: 85rem;
     --light-blue-bg: #324f80;
+    --dark-blue: #274072;
 }
 * {
 	margin: 0;
@@ -57,7 +58,7 @@ nav > div {
 }
 
 .dark-blue-bg {
-	background-color: #274072;
+	background-color: var(--dark-blue);
 	color: white;
 }
 footer div > h2 {
