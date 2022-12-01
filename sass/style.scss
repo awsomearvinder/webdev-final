@@ -67,21 +67,37 @@ nav > div {
 	background-color: var(--super-light-blue);
 }
 .search-area-container {
-	height: 18rem;
+	height: 25rem;
 	display: flex;
 	align-items: center;
 }
 
 .search-area {
+	width: 30rem;
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1rem;
 	flex-direction: column;
+	text-align: center;
+	h3 {
+		color: var(--light-blue);
+	}
+}
+
+
+h3 {
+	font-size: 1.2rem;
 }
 
 input {
 	width: 100%;
 	border: none;
+}
+.search-area > input {
+	height: 0rem;
+	border-radius: 4rem;
+	padding: 2rem;
+	font-size: 2rem;
 }
 .search-area > button {
 	width: 7rem;
@@ -90,7 +106,7 @@ input {
 	height: 3rem;
 	background-color: green;
 	border: none;
-	border-radius: 1rem;
+	border-radius: 0.4rem;
 }
 footer div > h2 {
 	color: #6788cb;
