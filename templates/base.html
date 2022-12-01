@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<head>
+	<title> NixOS </title>
+	<link href = "style.css" rel = "stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class = "black-bg">
+		<div class = "space-apart center">
+		<div class = "space-apart navbar-content">
+			<img href = "nixos-logo.png" class = "nav-logo"/>
+			<span class = "nav-name"> <b> Nix: </b> </span> <span class = "nav-blurb"> towards reproducability </span>
+		</div>
+		<div class = "space-apart navbar-content">
+			<a> Home </a>
+			<a> Install </a>
+			<a> Donate </a>
+		</div>
+		</div>
+	</nav>
+	<div class = "page_content">
+	{% block page_content %} {% endblock page_content %}
+	</div>
+	<!-- little not ideal thing here, when the page gets too small
+	      it'll go 3 up 1 down, instead of 2 up 2 down.
+	      This is annoying to fix, and although I can do it,
+	      I don't care. It only breaks for a small subset of devices
+	      on that aspect ratio anyways -->
+	<footer class = "dark-blue-bg">
+		<div class = "footer-items center">
+		<div class = "space-apart center">
+		<div>
+			<h2> The project </h2>
+			<p><a> Channel Status </a></p>
+			<p><a> Packages </a></p>
+			<p><a> Option Search </a></p>
+			<p><a> Security </a></p>
+		</div>
+		<div>
+			<h2> Get in touch </h2>
+			<p><a> Forum </a></p>
+			<p><a> Matrix Chat </a></p>
+			<p><a> Commercial Chat </a></p>
+		</div>
+		<div>
+			<h2> Contribute </h2>
+			<p><a> Contributing Guide </a></p>
+		</div>
+		<div>
+			<h2> Stay up to date </h2>
+			<p><a> Blog </a></p>
+			<p><a> Newsletter </a></p>
+		</div>
+		</div>
+		<hr>
+		<!-- I don't like br, consider it a hack. I'm lazy though. -->
+		<br>
+		<p> &copy; 2022 NixOS contributors <br>
+		 CC-BY-SA-4.0 </p>
+		<br>
+		</div>
+	</footer>
+</body>

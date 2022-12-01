@@ -1,0 +1,114 @@
+:root {
+    --content-width: 85rem;
+    --light-blue-bg: #324f80;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page_content {
+	flex: 1;
+}
+.black-bg {
+    background-color: black;
+    color: white;
+}
+// This class just makes the content inside of it
+// split as far as possible from eachother
+.space-apart {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+// This class just makes the content inside of it
+// split evenly, with gaps at the edges as well.
+.space-evenly {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.navbar-content {
+	display: flex;
+	align-items: center;
+}
+.navbar-content > * {
+	margin: 0 0.5rem;
+}
+
+nav {
+	height: 3rem;
+}
+nav > div {
+	align-items: center;
+	max-width: var(--content-width);
+	height: 100%;
+}
+.nav-logo {
+	height: 2rem;
+	width: 2rem;
+}
+
+.dark-blue-bg {
+	background-color: #274072;
+	color: white;
+}
+footer div > h2 {
+	color: #6788cb;
+	margin: 0.5rem 0;
+}
+footer div {
+	margin: 1rem 0;
+}
+@media (min-width: 12rem) {
+	footer div {
+	    min-width: 12rem;
+	}
+}
+footer {
+	width: 100%;
+	min-height: 15rem;
+}
+.footer-items > hr {
+	border: 1px solid var(--light-blue-bg);
+	max-width: 85rem;
+}
+.footer-items {
+	max-width: var(--content-width);
+}
+.widescreen-max-width {
+	max-width: var(--content-width);
+}
+.index-banner-content {
+	display: flex;
+	width: 100%;
+}
+.index-banner-content > * {
+	width: 36%;
+	margin: 2rem 6%;
+}
+// temporary hack.
+.index-banner-content > img {
+	height: 20px;
+}
+.center {
+	margin: auto;
+}
+
+@media (max-width: 500px) {
+	.nav-blurb {
+		display: none;
+	}
+}
+@media (max-width: 300px) {
+	.nav-name {
+		display: none;
+	}
+}
