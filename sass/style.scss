@@ -1,6 +1,6 @@
 :root {
     --content-width: 85rem;
-    --light-blue-bg: #324f80;
+    --light-blue: #324f80;
     --dark-blue: #274072;
 }
 * {
@@ -78,7 +78,7 @@ footer {
 	min-height: 15rem;
 }
 .footer-items > hr {
-	border: 1px solid var(--light-blue-bg);
+	border: 1px solid var(--light-blue);
 	max-width: 85rem;
 }
 .footer-items {
