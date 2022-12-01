@@ -1,6 +1,7 @@
 :root {
     --content-width: 85rem;
     --light-blue: #324f80;
+    --super-light-blue: #D5E8F6;
     --dark-blue: #274072;
 }
 * {
@@ -61,6 +62,35 @@ nav > div {
 .dark-blue-bg {
 	background-color: var(--dark-blue);
 	color: white;
+}
+.super-light-blue-bg {
+	background-color: var(--super-light-blue);
+}
+.search-area-container {
+	height: 18rem;
+	display: flex;
+	align-items: center;
+}
+
+.search-area {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-direction: column;
+}
+
+input {
+	width: 100%;
+	border: none;
+}
+.search-area > button {
+	width: 7rem;
+	font-size: 1.3rem;
+	color: white;
+	height: 3rem;
+	background-color: green;
+	border: none;
+	border-radius: 1rem;
 }
 footer div > h2 {
 	color: #6788cb;
