@@ -135,6 +135,24 @@ footer {
 	margin: auto;
 }
 
+.nix-property-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem 1rem;
+	gap: 0.5rem;
+	max-width: 20rem;
+	text-align: center;
+}
+.nix-property-item > h3 {
+	color: var(--light-blue);
+}
+.nix-property-item > img {
+	background-color: grey;
+	height: 7rem;
+	width: 12rem;
+}
+
 @media (max-width: 500px) {
 	.nav-blurb {
 		display: none;
