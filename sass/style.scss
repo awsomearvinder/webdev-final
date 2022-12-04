@@ -310,6 +310,14 @@ a {
 	width: 45%;
 }
 
+@media (max-width: 700px) {
+	.index-banner-content >  img {
+		display: none;
+	}
+	// hahah I wrote this in a burst I'm so done with this :(
+	.index-banner-text { width: 100%; min-height: 10rem; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+}
+
 @media (max-width: 500px) {
 	.nav-blurb {
 		display: none;
