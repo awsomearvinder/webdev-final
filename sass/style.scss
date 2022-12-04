@@ -74,6 +74,9 @@ nav > div {
 .super-light-blue-bg {
 	background-color: var(--super-light-blue);
 }
+.light-blue-bg {
+	background-color: var(--light-blue);
+}
 .search-area-container {
 	height: 25rem;
 	display: flex;
@@ -175,6 +178,46 @@ footer {
 	background-color: grey;
 	height: 7rem;
 	width: 12rem;
+}
+.donate-header {
+	padding: 0.7rem;
+}
+.light-blue-text {
+	color: var(--light-blue);
+}
+.donate-content-div {
+	min-height: 20rem;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	h2 {
+		margin-top: 1rem;
+	}
+	p {
+		margin-top: 0.5rem;
+	}
+}
+.acknowledgements {
+	width: 100%;
+	flex: 1;
+}
+
+.acknowledgements-inner {
+	padding: 1rem 0;
+	* {
+		color: white;
+	}
+	h2 {
+		margin-top: 1rem;
+		margin-bottom: 0.7rem;
+	}
+	p {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.acknowledgements-text {
+	width: 45%;
 }
 
 @media (max-width: 500px) {

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class = "dark-blue-bg">
+	<div class = "widescreen-max-width center donate-header">
+	<h1> Donate </h1>
+	</div>
+</div>
+<div class = "widescreen-max-width center donate-content-div">
+<h2 class = "light-blue-text"> The infrastructure we host are funded by donations!</h2>
+<p> Our build farm and binary cache are expensive to operate [https://opencollective.com/nixos/expenses].
+Donations ensure we can keep operating in the future. Donating a small amount every month ensures we
+can keep running </p>
+<h2 class = "light-blue-text">Donate using Open Collective </h2>
+<p> NixOS Foundation is using Open Collective to manage the finances so everyone can see 
+where money comes from and where money goes. </p>
+</div>
+
+<div class = " light-blue-bg acknowledgements">
+	<div class = "widescreen-max-width acknowledgements-inner center">
+		<div class = "acknowledgements-text">
+		<h2> Acknowledgements </h2>
+		<p>The Nix package manager was developed by Eelco Dolstra as part of his PhD research in the TraCE project, funded by the Jacquard programme of the Netherlands Organisation for Scientific Research (NWO) and SERC. The first prototype of NixOS was developed by Armijn Hemel as his master’s thesis project. Hydra, the Nix-based continuous build system, was developed as part of the LaQuSo Buildfarm project, funded by NIRICT and LaQuSo. </p>
+
+		<p> The following companies and institutes have supported the development of NixOS and hosting for its infrastructure. We are very grateful for that! If you would like to support us as well, please contact The NixOS Foundation. </p>
+		</div>
+	</div>
+</div>
+{% endblock page_content %}
