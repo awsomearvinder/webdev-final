@@ -18,6 +18,8 @@ body {
 nav {
 	a {
 		color: white;
+		font-weight: normal;
+		text-decoration: none;
 	}
 }
 
@@ -140,6 +142,11 @@ footer {
 	max-width: 85rem;
 }
 .footer-items {
+	a {
+		color: white;
+		text-decoration: none;
+		font-weight: normal;
+	}
 	max-width: var(--content-width);
 }
 .widescreen-max-width {
@@ -202,6 +209,11 @@ footer {
 	flex: 1;
 }
 
+a {
+	text-decoration: underline;
+	color: var(--dark-blue);
+	font-weight: bold;
+}
 .acknowledgements-inner {
 	padding: 1rem 0;
 	* {
