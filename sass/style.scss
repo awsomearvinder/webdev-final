@@ -23,6 +23,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
+
 nav {
 	a {
 		color: white;
@@ -32,6 +33,59 @@ nav {
 	a:hover {
 		border-bottom: 0.15rem solid white;
 	}
+}
+
+.padded-in-header-1 {
+	margin-left: 1rem;
+	padding: 0.5rem;
+}
+
+.inline {
+	display: inline-block;
+}
+
+code {
+	background-color: black;
+	color: white;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+	display: inline-block;
+	min-width: 80%;
+}
+.color-blue {
+	color: var(--dark-blue);
+}
+.bold {
+	font-weight: 700;
+}
+.blue-button {
+	background-color: var(--dark-blue);
+	border-radius: 1rem;
+	color: white;
+	text-decoration: none;
+	padding: 0.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// this stuff probably shouldn't be in here, but I'm lazy.
+	// in reality the site only uses this in one place, and I don't
+	// wanna make a seperate class
+	max-width: 15rem;
+	margin-top: 0.7rem;
+	height: 1.8rem;
+}
+.install-content {
+	p {
+		max-width: 55rem;
+		margin: 1rem 0;
+	}
+}
+
+.header {
+	* {
+		padding: 0.7rem;
+	}
+	align-items: center;
 }
 
 .page_content {

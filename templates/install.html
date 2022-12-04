@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class = "dark-blue-bg">
+	<div class = "widescreen-max-width header center">
+	<h1> Install </h1>
+	</div>
+</div>
+<div>
+	<div class = "widescreen-max-width center">
+	<div class = "super-light-blue-bg">
+		<h1 class = "padded-in-header-1"> Nix </h1>
+	</div>
+	<div class = "widescreen-max-width center padded-in-header-1 install-content">
+		<h3 class> Multi-user: </h3>  <code> $ sh &lt;(curl -L https://nixos.org/nix/install) --daemon </code>
+		<br>
+		<br>
+		<h3 class> Single-user: </h3>  <code> $ sh &lt;(curl -L https://nixos.org/nix/install) --no-daemon </code>
+		<p> <span class = "color-blue bold">Which installer should you chose?</span> We reccomend multi-user, however it requires root access. <br> <b> Run single-user if root access is not available. </b></p>
+	</div>
+	<div class = "super-light-blue-bg">
+		<h1 class = "padded-in-header-1"> NixOS </h1>
+	</div>
+	<div class = "widescreen-max-width center padded-in-header-1 install-content">
+		<p> <span class = "color-blue bold">Graphical ISO image: </span> </p>
+		<p> The graphical installation ISO image contains the <b>graphical NixOS installer</b> as well as a <b>Desktop Environment</b> and several applications. It’s a live CD, so it allows you to get an impression of NixOS (and the Nix package manager) without installing it. </p>
+		<a class = "blue-button" href = "https://channels.nixos.org/nixos-22.11/latest-nixos-gnome-x86_64-linux.iso"> Download (Gnome, AMD/64-bit) </a>
+		<a class = "blue-button" href = "https://channels.nixos.org/nixos-22.11/latest-nixos-plasma-x86_64-linux.iso"> Download (Plasma, AMD/64-bit) </a>
+		<p> <span class = "color-blue bold">Minimal ISO image: </span> </p>
+		<p> The minimal installation ISO image <b>does not contain the graphical user interface,</b> and is therefore a lot smaller. <b>You have to run the installer from the console</b>. It contains a number of rescue tools. </p>
+		<a class = "blue-button" href = "https://channels.nixos.org/nixos-22.11/latest-nixos-minimal-x86_64-linux.iso"> Download (AMD/64-bit) </a>
+		<!-- dirty hack -->
+		<br>
+		<br>
+	</div>
+	</div>
+</div>
+{% endblock page_content %}
